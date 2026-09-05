@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Tecnología</h1>
+        <p>Encuentra el producto que necesitas</p>
+    </header>
+
+    <main>
+
+        <section class="controles">
+
+            <div class="busqueda">
+                <label for="buscar">Buscar producto:</label>
+                <input
+                    type="text"
+                    id="buscar"
+                    placeholder="Ejemplo: Laptop"
+                >
+            </div>
+
+            <div class="categoria">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                    <option value="Todas">Todas</option>
+                    <option value="Computadoras">Computadoras</option>
+                    <option value="Periféricos">Periféricos</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Componentes">Componentes</option>
+                </select>
+            </div>
+
+            <div class="botones">
+                <button id="btnTodos">Mostrar todos</button>
+                <button id="btnDisponibles">Mostrar disponibles</button>
+            </div>
+
+        </section>
+
+        <section id="catalogo" class="catalogo"></section>
+
+        <p id="mensaje" class="mensaje"></p>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Catálogo de Tecnología</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
